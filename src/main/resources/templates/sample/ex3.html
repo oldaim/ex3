@@ -5,13 +5,13 @@
     <title>Title</title>
 </head>
 <body>
+ <h1 th:text="${result}"></h1>
+ <h1 th:text="${dto}"></h1>
 
-<ul>
-
-    <li th:each="dto : ${list}">
-        [[${dto}]]
-    </li>
-</ul>
+<script th:inline="javascript">
+    var msg =[[${result}]]
+    var dto =[[${dto}]]
+</script>
 
 </body>
 </html>
